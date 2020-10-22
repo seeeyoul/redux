@@ -10,6 +10,13 @@ import __DO_NOT_USE__ActionTypes from './utils/actionTypes'
  * This is a dummy function to check if the function name has been altered by minification.
  * If the function has been minified and NODE_ENV !== 'production', warn the user.
  */
+
+/**
+ * 这是一个伪函数
+ * 函数在被压缩的情况下，函数名会被替换成单个字母甚至`_`
+ * 因此，我们可以利用这个伪函数，来判断在开发环境中，是否存在代码被压缩的情况
+ * 如果存在这样的情况，就抛出错误
+ */
 function isCrushed() {}
 
 if (

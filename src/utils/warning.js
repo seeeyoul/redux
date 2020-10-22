@@ -4,6 +4,10 @@
  * @param {String} message The warning message.
  * @returns {void}
  */
+
+/**
+ * 就是对warning信息的封装啦～
+ */
 export default function warning(message) {
   /* eslint-disable no-console */
   if (typeof console !== 'undefined' && typeof console.error === 'function') {

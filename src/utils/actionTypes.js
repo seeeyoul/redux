@@ -5,6 +5,15 @@
  * Do not reference these action types directly in your code.
  */
 
+/**
+ * 三种redux预留的action types =>
+ *                            INIT(reducer的初始化类型)
+ *                            REPLACE(reducer的替换类型)
+ *                            PROBE_UNKNOWN_ACTION(随机类型)，
+ * 为了确保这三种types的唯一性，在每个type的末尾加了一个随机生成的字符串
+ * 同时，这三个types是规定我们不要使用的type
+ * */
+
 const randomString = () =>
   Math.random()
     .toString(36)
